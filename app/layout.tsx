@@ -3,6 +3,11 @@ import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 /**
  * Using Plus Jakarta Sans as a Gilroy-equivalent (same geometric humanist DNA).
  * To switch to Gilroy: replace this with next/font/local pointing to your woff2
